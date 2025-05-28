@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="st.css" />
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresher Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hi, I'm MOHAMMED</h1>
+      <p>Fresher UI/UX Designer | Crafting clean and intuitive designs</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm a recent graduate bachelory of degree in b.tech in the stream of
+        computer science and engineering
+      </p>
+      <p><strong>Skills:</strong> in java,mysql,html/css;</p>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project">
+        <h3>Redesign of Local Café Website</h3>
+        <p><strong>Tools:</strong> Figma</p>
+        <p>
+          Redesigned a basic café website to improve user flow and mobile
+          responsiveness. Included a simple ordering feature mockup.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Mobile App UI – Fitness Tracker</h3>
+        <p><strong>Tools:</strong> Adobe XD</p>
+        <p>
+          Created a fitness app prototype with features like goal tracking, step
+          counter, and dark/light modes.
+        </p>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2 class="section-title">Resume</h2>
+      <p><a href="#" download>Download my Resume (PDF)</a></p>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact">
+        <a href="mailto:aisha@example.com">Email: aisha@example.com</a>
+        <a href="https://linkedin.com/in/aisha"
+          >LinkedIn: linkedin.com/in/aisha</a
+        >
+        <a href="https://behance.net/aisha">Behance: behance.net/aisha</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Aisha - Design Portfolio</p>
+    </footer>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
